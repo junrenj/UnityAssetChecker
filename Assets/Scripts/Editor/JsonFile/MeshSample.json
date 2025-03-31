@@ -1,0 +1,29 @@
+{
+  "targetFolderPath": "Assets/Models",
+  "targetType": 1,
+  "textureImporterFormat": [
+    {
+      "targetPlatform": "Default",
+      "format": -1,
+      "maxSize": 2048
+    },
+    {
+      "targetPlatform": "Standalone",
+      "format": 4,
+      "maxSize": 1024
+    }
+  ],
+  "verticesLimit": 1000,
+  "standardPattern": "^Assets/Models/SM_.*\\.(fbx|obj)$",
+  "logExportPath": "Assets/Scripts/Editor/DebugLog",
+  "limitComponents": [
+    {
+      "component": "TextMeshPro",
+      "pattern": "///"
+    },
+    {
+      "component": "BoxCollider",
+      "pattern": "//"
+    }
+  ]
+}

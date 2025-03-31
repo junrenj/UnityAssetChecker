@@ -1,0 +1,6 @@
+<DebugLog>
+  <LogEntry>文件名: Mickey 1.obj 不符合规范原因: 不符合预设的正则表达式: ^Assets/Models/SM_.*\.(fbx|obj)$</LogEntry>
+  <LogEntry>文件名: Mickey.obj 不符合规范原因: 不符合预设的正则表达式: ^Assets/Models/SM_.*\.(fbx|obj)$</LogEntry>
+  <LogEntry>文件名: Sphere.fbx 不符合规范原因: 不符合预设的正则表达式: ^Assets/Models/SM_.*\.(fbx|obj)$</LogEntry>
+  <LogEntry>检查完成,总共有3个文件不符合规范</LogEntry>
+</DebugLog>

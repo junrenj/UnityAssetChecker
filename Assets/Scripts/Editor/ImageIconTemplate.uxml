@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Row" style="flex-grow: 1; height: 70px; justify-content: flex-start; align-self: auto; max-height: 70px; flex-direction: row;">
+        <ui:VisualElement name="Icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Scripts/Editor/Icon/Icon.png?fileID=2800000&amp;guid=474863426da2a6c479b4c2a0857c64b9&amp;type=3#Icon&quot;); width: 64px; height: 64px; max-height: 64px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; max-width: 64px;" />
+        <ui:VisualElement name="Details" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Image.png" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FileName" style="align-self: flex-start; align-items: flex-start; margin-left: 10px; justify-content: space-between; font-size: 12px;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Size" style="margin-left: 10px; font-size: 12px;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Format" style="font-size: 12px; margin-left: 10px;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Path" style="font-size: 12px; padding-left: 10px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

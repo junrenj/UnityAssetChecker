@@ -1,0 +1,9 @@
+<DebugLog>
+  <LogEntry>场景 Assets/Scenes/Test_1.unity 的GameObject存在Animator组件</LogEntry>
+  <LogEntry>场景 Assets/Scenes/Test_1.unity 处理完成，标记了 1 个物体的名称。</LogEntry>
+  <LogEntry>场景 Assets/Scenes/Test_2.unity 的GameObject (1)存在Animator组件</LogEntry>
+  <LogEntry>场景 Assets/Scenes/Test_2.unity 处理完成，标记了 1 个物体的名称。</LogEntry>
+  <LogEntry>场景 Assets/Scenes/Test_3.unity 的Test_Animator存在Animator组件</LogEntry>
+  <LogEntry>场景 Assets/Scenes/Test_3.unity 处理完成，标记了 1 个物体的名称。</LogEntry>
+  <LogEntry>检查完成,总共有3个文件不符合规范</LogEntry>
+</DebugLog>

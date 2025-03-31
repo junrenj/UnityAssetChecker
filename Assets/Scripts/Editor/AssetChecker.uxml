@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Editor/AssetChecker.uss?fileID=7433441132597879392&amp;guid=e102941992fbfe748b828eb9786d7a16&amp;type=3#AssetChecker" />
+    <ui:VisualElement name="MainPanel" style="flex-grow: 1;">
+        <ui:VisualElement name="TopPart" style="flex-grow: 1; height: 70%; flex-direction: row; max-height: none; min-height: 70%;">
+            <ui:VisualElement name="ExecutePart" style="flex-grow: 1; width: 30%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); justify-content: flex-start; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                <ui:Label tabindex="-1" text="执行操作面板" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Lab_Execute" style="font-size: 16px; background-color: rgb(69, 69, 69);" />
+                <ui:Button text="贴图模式" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_Texture" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+                <ui:Button text="网格体模式" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_Mesh" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+                <ui:Button text="场景模式" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_Scene" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+                <ui:Button text="导入Json一键检查" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_ImportSetting" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="DetailPart" style="flex-grow: 1; width: 70%; flex-direction: column; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row; height: 5%; justify-content: space-between; align-items: flex-start; -unity-text-align: lower-left; background-color: rgb(91, 91, 91); min-height: 25px; max-height: 25px;">
+                    <ui:Label tabindex="-1" text="导入的图片" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Lab_Detail" style="padding-left: 7px; -unity-text-align: middle-left; padding-top: 0; height: 25px; width: 77px; justify-content: center; align-self: center; align-items: center;" />
+                    <ui:Button text="导入" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_Import" style="margin-top: 1px; margin-right: 10px; margin-bottom: 1px; margin-left: 1px; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; -unity-text-align: upper-center; white-space: nowrap; height: 21px; width: 57px;" />
+                    <ui:Button text="检查所有" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_Check" style="padding-top: 0; padding-right: 2px; padding-bottom: 0; padding-left: 2px; height: 22px; width: 59px;" />
+                    <ui:Button text="一键修复" parse-escape-sequences="false" display-tooltip-when-elided="true" name="btn_Fix" style="margin-top: 1px; margin-right: 10px; margin-bottom: 1px; margin-left: 1px; padding-top: 0; padding-right: 2px; padding-bottom: 0; padding-left: 2px; height: 22px; width: 56px;" />
+                </ui:VisualElement>
+                <ui:ListView name="ImgsPanel" />
+                <ui:ListView name="MeshesPanel" />
+                <ui:ListView name="ScenesPanel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomPart" style="flex-grow: 1; height: auto; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); max-height: none; min-height: auto;">
+            <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row; justify-content: space-between; height: 20px; max-height: 20px; min-height: 20px;">
+                <ui:Label tabindex="-1" text="控制台输出" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Lab_Console" style="background-color: rgba(69, 69, 69, 0); margin-left: 5px; font-size: 15px;" />
+                <ui:Button text="导出打印信息" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_ExportLog" style="border-right-width: 10px; font-size: 12px;" />
+            </ui:VisualElement>
+            <ui:ListView name="DebugList" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

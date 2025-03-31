@@ -30,6 +30,7 @@
 **示例检测规则**：
 - 若发现某贴图超出 2048x2048，将会打印信息。
 - 若 iOS 平台使用了 ETC2 压缩，会打印信息。
+- ![贴图检查示例](ReadMeImages/Texture_check.png)
 
 ### 4.2 模型检查
 该功能检测模型文件（FBX/OBJ）的以下属性：
@@ -39,6 +40,7 @@
 **示例检测规则**：
 - 若模型顶点数超过 10 万，将会打印信息。
 - 若模型命名不符合 `model_XXXX.fbx` 格式，会打印信息。
+- ![模型检查示例](ReadMeImages/MeshCheck.png)
 
 ### 4.3 场景检查
 该功能检查当前场景中的物体，确保其不包含非法或不符合规范的组件。
@@ -48,6 +50,7 @@
 **示例检测规则**：
 - 若某 GameObject 包含未授权的 `CustomScript.cs`，会提示错误。
 - 若一个名叫 `GameActor` 的场景物体有非法组件，其名字会变成自定义前缀 `_GameActor`。
+- ![场景检查示例](ReadMeImages/SceneCheck.png)
 
 ### 4.4 快速查找本地目录
 该功能支持用户点击 UI 中的图标，自动打开该文件所在的文件夹并高亮。
@@ -70,10 +73,12 @@
 ### 6.1 ScriptableObject（Inspector 窗口）
 - 当没有 JSON 文件时，默认数据存储在 ScriptableObject 中。
 - 可以直接在 Inspector 编辑，操作简单。
+- ![ScriptableObject文件示例](ReadMeImages/SOFile.png)
 
 ### 6.2 JSON 表（其他窗口）
 该工具支持用户选择任意地址的 JSON 表进行配置。
 - 读取更加灵活，但修改稍微麻烦，因为贴图格式是一个枚举，需要找到对应的数字。
+- ![Json文件示例](ReadMeImages/JsonFile.png)
 
 ## 7. 目前的 Bug 及不足
 
